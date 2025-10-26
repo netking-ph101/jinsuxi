@@ -805,7 +805,7 @@ cat
 
 
               <!-- 加入購物車 -->
-              <hr>
+              <!-- <hr>
               <h4 class="fw-bold ">加入購物車</h4>
               <div class="simpleCart_shelfItem">
                 <h2 class="item_name">聯合航運-太吉、凱旋、滿天星</h2>
@@ -886,7 +886,7 @@ cat
                   <button type="button" id="item_add" class="item_add btn btn-dark">加入購物車</button>
                 </div>
               </div>
-
+ -->
 
 
               <!-- 地圖資訊 S-->
@@ -965,11 +965,11 @@ cat
                     // 計算基本價格
                     var basePrice = 0;
                     if (itemType === '成人票') {
-                      if (currentPage.indexOf('boat-1.html') > -1 ) {
-                      basePrice = 1600;
+                      if (currentPage.indexOf('boat-1.html') > -1) {
+                        basePrice = 1600;
                       }
-                      if (currentPage.indexOf('boat-2.html') > -1 ) {
-                      basePrice = 1400;
+                      if (currentPage.indexOf('boat-2.html') > -1) {
+                        basePrice = 1400;
                       }
 
                       // 檢查預訂日期和回程日期是否在特殊日內
@@ -983,19 +983,19 @@ cat
 
                       // 根據特殊日期調整價格
                       if (isSpecialReservationDate) {
-                        if (currentPage.indexOf('boat-1.html') > -1 ) { basePrice += 175;}
-                          else { basePrice += 275; }
+                        if (currentPage.indexOf('boat-1.html') > -1) { basePrice += 175; }
+                        else { basePrice += 275; }
                       }
                       if (isSpecialReturnDate) {
-                        if (currentPage.indexOf('boat-1.html') > -1 ) { basePrice += 175;}
-                          else { basePrice += 275; }
+                        if (currentPage.indexOf('boat-1.html') > -1) { basePrice += 175; }
+                        else { basePrice += 275; }
                       }
 
                       // 若不在特殊日期内，再检查是否在星期五、星期六、星期日或星期一
                       if (!isSpecialReservationDate) {
                         var reservationDay = reservationDate.getDay();
                         if (reservationDay === 5 || reservationDay === 6) {
-                          if (currentPage.indexOf('boat-1.html') > -1 ) { basePrice += 50;}
+                          if (currentPage.indexOf('boat-1.html') > -1) { basePrice += 50; }
                           else { basePrice += 150; }
                         }
                       }
@@ -1003,7 +1003,7 @@ cat
                       if (!isSpecialReturnDate) {
                         var returnDay = returnDate.getDay();
                         if (returnDay === 0 || returnDay === 1) {
-                          if (currentPage.indexOf('boat-1.html') > -1 ) { basePrice += 50;}
+                          if (currentPage.indexOf('boat-1.html') > -1) { basePrice += 50; }
                           else { basePrice += 150; }
                         }
                       }
